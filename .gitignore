@@ -1,0 +1,12 @@
+## System and generated files
+.idea
+.DS_Store
+.sass-cache
+
+## Directories
+node_modules/
+
+## Files
+result.xml
+npm-debug.log
+yarn-error.log

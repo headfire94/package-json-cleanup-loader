@@ -1,0 +1,11 @@
+{
+  "name": "package-json-cleanup-loader",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Egor Vodopyanov",
+  "license": "MIT",
+  "devDependencies": {
+    "loader-utils": "^1.1.0"
+  },
+  "dependencies": {}
+}
