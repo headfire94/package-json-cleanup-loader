@@ -37,6 +37,8 @@ $ cat ./node_modules/browserify/package.json  | grep _
 This package remove all values for which keys starts with `_`  and with specific character that you can pass in options.
 
 ## How I can use this package?
+#### CLI
+webpack --module-bind 'path/to/package.json=package-json-cleanup-loader'
 #### Change webpack config
 
 ```
