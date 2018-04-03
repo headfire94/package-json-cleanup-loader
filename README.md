@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/headfire94/package-json-cleanup-loader.svg?branch=master)](https://travis-ci.org/headfire94/package-json-cleanup-loader)
 ## Description
 
 Did you know that when [webpack][1] includes `package.json` file in bundle this bundle can contain private information like installed module path?
