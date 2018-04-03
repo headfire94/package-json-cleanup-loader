@@ -2,7 +2,7 @@
 ## Description
 
 Did you know that when [webpack][1] includes `package.json` file in bundle this bundle can contain private information like installed module path?
-For example, lets install [webpack][1]:
+For example, lets install [browserify][1]:
 ```
 $ npm install browserify
 ...
@@ -61,4 +61,5 @@ module.exports = {
 
 MIT
 
-          
+[1]: https://github.com/webpack/webpack
+[2]: https://github.com/substack/node-browserify
