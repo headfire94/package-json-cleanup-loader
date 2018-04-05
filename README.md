@@ -1,3 +1,4 @@
+[![NPM Package](https://img.shields.io/npm/v/package-json-cleanup-loader.svg?style=flat-square)](https://www.npmjs.org/package/package-json-cleanup-loader)
 [![Build Status](https://travis-ci.org/headfire94/package-json-cleanup-loader.svg?branch=master)](https://travis-ci.org/headfire94/package-json-cleanup-loader)
 ## Description
 
