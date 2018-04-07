@@ -19,10 +19,13 @@
   "scripts": {
     "lint": "standard",
     "test": "npm run lint && npm run unit",
-    "unit": "echo 'no tests'"
+    "unit": "node test/index.js"
   },
   "devDependencies": {
     "loader-utils": "^1.1.0",
-    "standard": "^11.0.1"
+    "memory-fs": "^0.4.1",
+    "standard": "^11.0.1",
+    "tape": "^4.9.0",
+    "webpack": "^4.5.0"
   }
 }
