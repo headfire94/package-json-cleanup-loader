@@ -1,11 +1,28 @@
 {
   "name": "package-json-cleanup-loader",
   "version": "1.0.1",
-  "description": "",
-  "author": "Egor Vodopyanov",
-  "license": "MIT",
-  "devDependencies": {
-    "loader-utils": "^1.1.0"
+  "description": "Remove not public values from package.json on webpacking",
+  "homepage": "https://github.com/headfire94/package-json-cleanup-loader",
+  "bugs": {
+    "url": "https://github.com/headfire94/package-json-cleanup-loader/issues"
   },
-  "dependencies": {}
+  "license": "MIT",
+  "author": "Egor Vodopyanov",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/headfire94/package-json-cleanup-loader"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && npm run unit",
+    "unit": "echo 'no tests'"
+  },
+  "devDependencies": {
+    "loader-utils": "^1.1.0",
+    "standard": "^11.0.1"
+  }
 }
