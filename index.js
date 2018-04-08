@@ -1,14 +1,15 @@
-const getOptions = require('loader-utils').getOptions;
+const getOptions = require('loader-utils').getOptions
+
 const arrify = (x) => Array.isArray(x) ? x : [x]
-module.exports = function(content) {
-  const options = getOptions(this);
-  const data = JSON.parse(content)
+
+module.exports = function (source) {
+  const options = getOptions(this)
+  const data = JSON.parse(source)
 
   let keys = Object.keys(data).filter((key) => !key.startsWith('_'))
   if (options && options.only !== undefined) keys = arrify(options.only)
 
   const result = {}
   for (let key of keys) result[key] = data[key]
-  content = JSON.stringify(result, null, 2);
-  return content;
-};
+  return JSON.stringify(result, null, 2)
+}

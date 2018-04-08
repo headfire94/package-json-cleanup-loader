@@ -1,5 +1,6 @@
 [![NPM Package](https://img.shields.io/npm/v/package-json-cleanup-loader.svg?style=flat-square)](https://www.npmjs.org/package/package-json-cleanup-loader)
 [![Build Status](https://travis-ci.org/headfire94/package-json-cleanup-loader.svg?branch=master)](https://travis-ci.org/headfire94/package-json-cleanup-loader)
+
 ## Description
 
 Did you know that when [webpack][1] includes `package.json` file in bundle this bundle can contain private information like installed module path?
@@ -39,25 +40,30 @@ $ cat ./node_modules/browserify/package.json  | grep _
 This package remove all values for which keys starts with `_`  and with specific character that you can pass in options.
 
 ## How I can use this package?
+
 ### Installation
 ```npm i --save-dev package-json-cleanup-loader```
 
 or
 
 ```yarn add -D package-json-cleanup-loader```
+
 ### Usage
+
 #### CLI
-webpack --module-bind 'path/to/package.json=package-json-cleanup-loader'
+`webpack --module-bind 'path/to/package.json=package-json-cleanup-loader'`
+
 #### Change webpack config
 
 ```
 module.exports = {
   module: {
     rules: [
-      { test: /package\.json$/,
+      {
+        test: /package\.json$/,
         loader: 'package-json-cleanup-loader',
         options: {
-          only: ["version", "name", "otherParam"]
+          only: ['version', 'name', 'otherParam']
         }
       }
     ]
@@ -70,4 +76,3 @@ module.exports = {
 MIT
 
 [1]: https://github.com/webpack/webpack
-[2]: https://github.com/substack/node-browserify
