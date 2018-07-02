@@ -1,6 +1,6 @@
 {
   "name": "package-json-cleanup-loader",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Remove not public values from package.json on webpacking",
   "homepage": "https://github.com/headfire94/package-json-cleanup-loader",
   "bugs": {
